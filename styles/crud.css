@@ -1,0 +1,160 @@
+/* CSS do cabeçalho */
+.header {
+  background-color: #ed7000;
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header span {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* CSS do formulário */
+.divForms {
+  width: 50%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.divForms form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.divForms label {
+  font-weight: bold;
+  color: #333;
+}
+
+.divForms input {
+  padding: 8px 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.divForms input:focus {
+  border-color: #ed7000;
+  outline: none;
+  box-shadow: 0 0 5px rgba(237, 112, 0, 0.5);
+}
+
+.divForms button {
+  padding: 10px 15px;
+  background-color: #ed7000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.divForms button:hover {
+  background-color: #d15f00;
+}
+
+.divForms #mensagem {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* CSS da tabela */
+.divTable {
+  width: 110rem;
+  margin: 0 auto;
+}
+
+.divTable table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.divTable thead th {
+  background-color: #ed7000;
+  color: #fff;
+  padding: 8px 10px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.divTable tbody td {
+  padding: 6px 8px;
+  border: 1px solid #ddd;
+  font-size: 0.8rem;
+  word-wrap: break-word;
+  overflow: hidden;
+  text-align: center;
+}
+
+.divTable tbody tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+.divTable tbody tr:hover {
+  background-color: #e2e6ea;
+}
+
+.divTable th.acao,
+.divTable td.acao {
+  text-align: center;
+  width: 90px;
+}
+
+.divTable .acao button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  color: #090131;
+  font-size: 0.8rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.divTable .acao button.editar {
+  background-color: #007bff;
+}
+
+.divTable .acao button.editar:hover {
+  background-color: #0056b3;
+}
+
+.divTable .acao button.excluir {
+  background-color: #dc3545;
+}
+
+.divTable .acao button.excluir:hover {
+  background-color: #a71d2a;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .divForms {
+    width: 90%;
+  }
+
+  .divTable table {
+    font-size: 0.7rem;
+  }
+
+  .divTable tbody td,
+  .divTable thead th {
+    padding: 4px;
+  }
+}

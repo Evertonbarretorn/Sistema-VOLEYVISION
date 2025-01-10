@@ -1,0 +1,84 @@
+/*CSS menu*/
+.navbar-nav {
+  margin-left: 10px;
+}
+.navbar {
+  background-color: #ed7000;
+  height: 85px;
+}
+.nav-item button {
+  background-color: #090131;
+}
+.nav-link {
+  color: white !important;
+  margin: 0 15px;
+  text-align: center;
+}
+.navbar-brand img {
+  height: 90px;
+  width: 90px;
+}
+
+/*CSS footer*/
+.container-fluid-footer {
+  background-color: #090131;
+}
+
+/* Info Section */
+.info-section {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+.info-section h2 {
+  color: #ed7000;
+}
+.info-section p {
+  color: black;
+  font-size: 20px;
+}
+
+/* Access Buttons */
+.access-buttons {
+  margin: 20px 0;
+  text-align: center;
+}
+.access-buttons a {
+  margin: 0 10px;
+  color: white;
+  background-color: #ed7000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.access-buttons a:hover {
+  background-color: #090131;
+}
+
+/* Table Container */
+.table-container {
+  margin: 20px auto;
+  width: 90%;
+}
+#estatisticas {
+  width: 100%;
+  text-align: left;
+}
+#estatisticas th,
+#estatisticas td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+#estatisticas th {
+  background-color: #ed7000;
+  color: white;
+}
+
+/* Estatisticas Info */
+.estatisticas-info {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  line-height: 1.5;
+}

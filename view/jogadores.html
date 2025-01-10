@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:," />
+    <title>Jogadores</title>
+    <link rel="stylesheet" href="/styles/crud.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <span>Cadastro de Jogadores</span>
+      </div>
+
+      <div class="divForms">
+        <form id="formCadastrarEditar">
+          <label for="id_time">Time:</label>
+          <input type="number" id="id_time" name="id_time" required />
+
+          <label for="nome">Nome do jogador:</label>
+          <input type="text" id="nome_jogador" name="nome_jogador" required />
+
+          <label for="Posicao">Posição:</label>
+          <input
+            type="text"
+            id="posicao_jogador"
+            name="posicao_jogador"
+            required
+          />
+
+          <label for="Altura">Altura:</label>
+          <input type="" id="altura_jogador" name="altura_jogador" required />
+
+          <label for="Idade">Idade:</label>
+          <input
+            type="number"
+            id="idade_jogador"
+            name="idade_jogador"
+            required
+          />
+
+          <button type="submit" id="botaoSalvar">Salvar</button>
+        </form>
+
+        <div id="mensagem"></div>
+      </div>
+      <br /><br /><br />
+
+      <div class="divTable">
+        <table>
+          <thead>
+            <tr>
+              <th>ID Jogador</th>
+              <th>Time</th>
+              <th>Nome</th>
+              <th>Posição</th>
+              <th>Altura</th>
+              <th>Idade</th>
+              <th class="acao">Editar</th>
+              <th class="acao">Excluir</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="/view/jogadores.js"></script>
+  </body>
+</html>

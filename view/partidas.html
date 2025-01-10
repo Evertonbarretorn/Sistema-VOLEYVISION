@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Partidas</title>
+    <link rel="stylesheet" href="/styles/crud.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <span>Cadastro de Partidas</span>
+      </div>
+
+      <div class="divForms">
+        <form id="formCadastrarEditar">
+          <label for="local_partida">Local da Partida:</label>
+          <input type="text" id="local_partida" name="local_partida" required />
+
+          <label for="data_partida">Data da Partida:</label>
+          <input type="date" id="data_partida" name="data_partida" required />
+
+          <label for="hora_partida">Hora da Partida:</label>
+          <input type="time" id="hora_partida" name="hora_partida" required />
+
+          <label for="id_time_a">ID Time A:</label>
+          <input type="number" id="id_time_a" name="id_time_a" required />
+
+          <label for="id_time_b">ID Time B:</label>
+          <input type="number" id="id_time_b" name="id_time_b" required />
+
+          <label for="id_vencedor">ID do Vencedor:</label>
+          <input type="number" id="id_vencedor" name="id_vencedor" />
+
+          <label for="sets_vencidos_a">Sets Vencidos (Time A):</label>
+          <input type="number" id="sets_vencidos_a" name="sets_vencidos_a" />
+
+          <label for="sets_vencidos_b">Sets Vencidos (Time B):</label>
+          <input type="number" id="sets_vencidos_b" name="sets_vencidos_b" />
+
+          <label for="ponto_saque_a">Pontos de Saque (Time A):</label>
+          <input type="number" id="ponto_saque_a" name="ponto_saque_a" />
+
+          <label for="ponto_saque_b">Pontos de Saque (Time B):</label>
+          <input type="number" id="ponto_saque_b" name="ponto_saque_b" />
+
+          <label for="ponto_ataque_a">Pontos de Ataque (Time A):</label>
+          <input type="number" id="ponto_ataque_a" name="ponto_ataque_a" />
+
+          <label for="ponto_ataque_b">Pontos de Ataque (Time B):</label>
+          <input type="number" id="ponto_ataque_b" name="ponto_ataque_b" />
+
+          <label for="ponto_bloqueio_a">Pontos de Bloqueio (Time A):</label>
+          <input type="number" id="ponto_bloqueio_a" name="ponto_bloqueio_a" />
+
+          <label for="ponto_bloqueio_b">Pontos de Bloqueio (Time B):</label>
+          <input type="number" id="ponto_bloqueio_b" name="ponto_bloqueio_b" />
+
+          <label for="erro_saque_a">Erros de Saque (Time A):</label>
+          <input type="number" id="erro_saque_a" name="erro_saque_a" />
+
+          <label for="erro_saque_b">Erros de Saque (Time B):</label>
+          <input type="number" id="erro_saque_b" name="erro_saque_b" />
+
+          <label for="erro_ataque_a">Erro de Ataque (Time A):</label>
+          <input type="number" id="erro_ataque_a" name="erro_ataque_a" />
+
+          <label for="erro_ataque_b">Erro de Ataque (Time B):</label>
+          <input type="number" id="erro_ataque_b" name="erro_ataque_b" />
+
+          <label for="status">Status da Partida:</label>
+          <select id="status_partida" name="status_partida" required>
+            <option value="agendada">Adiada</option>
+            <option value="concluida">Concluída</option>
+          </select>
+
+          <button type="submit" id="botaoSalvar">Salvar</button>
+        </form>
+
+        <div id="mensagem"></div>
+      </div>
+      <br /><br /><br />
+
+      <div class="divTable">
+        <table>
+          <thead>
+            <tr>
+              <th>ID Partida</th>
+              <th>Local</th>
+              <th>Data</th>
+              <th>Hora</th>
+              <th>Time A</th>
+              <th>Time B</th>
+              <th>Time Vencedor</th>
+              <th>Sets Vencidos (A)</th>
+              <th>Sets Vencidos (B)</th>
+              <th>Pontos de Saque (A)</th>
+              <th>Pontos de Saque (B)</th>
+              <th>Pontos de Ataque (A)</th>
+              <th>Pontos de Ataque (B)</th>
+              <th>Pontos de Bloqueio (A)</th>
+              <th>Pontos de Bloqueio (B)</th>
+              <th>Erros de Saque (A)</th>
+              <th>Erros de Saque (B)</th>
+              <th>Erro de Ataque (A)</th>
+              <th>Erro de Ataque (B)</th>
+              <th>Status</th>
+              <th class="acao">Editar</th>
+              <th class="acao">Excluir</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="/view/partidas.js"></script>
+  </body>
+</html>

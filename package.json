@@ -1,0 +1,20 @@
+{
+  "name": "volleyvision",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000S\u0000i\u0000s\u0000t\u0000e\u0000m\u0000a\u0000-\u0000V\u0000o\u0000l\u0000e\u0000y\u0000V\u0000i\u0000s\u0000i\u0000o\u0000n\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Anthony Luan, Everton Barreto e Leandra Mirrelly",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "pg": "^8.13.1"
+  }
+}

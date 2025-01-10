@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Times</title>
+    <link rel="stylesheet" href="/styles/crud.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <span>Cadastro de Times</span>
+      </div>
+
+      <div class="divForms">
+        <form id="formCadastrarEditar">
+          <label for="nome">Nome do Time:</label>
+          <input type="text" id="nome_time" name="nome_time" required />
+
+          <label for="cidade">Cidade:</label>
+          <input type="text" id="cidade_time" name="cidade_time" required />
+
+          <label for="estado">Estado:</label>
+          <input type="text" id="estado_time" name="estado_time" required />
+
+          <label for="treinador">Treinador:</label>
+          <input
+            type="text"
+            id="treinador_time"
+            name="treinador_time"
+            required
+          />
+
+          <button type="submit" id="botaoSalvar">Salvar</button>
+        </form>
+
+        <div id="mensagem"></div>
+      </div>
+      <br /><br /><br />
+
+      <div class="divTable">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nome</th>
+              <th>Cidade</th>
+              <th>Estado</th>
+              <th>Treinador</th>
+              <th class="acao">Editar</th>
+              <th class="acao">Excluir</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="/view/times.js"></script>
+  </body>
+</html>
