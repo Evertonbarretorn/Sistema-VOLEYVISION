@@ -1,55 +1,6 @@
 document.addEventListener("DOMContentLoaded", async function () {
   async function carregarRanking() {
     try {
-      const response = await fetch("/ranking");
-      if (!response.ok) {
-        throw new Error("Erro ao buscar o ranking");
-      }
-
-      const ranking = await response.json();
-
-      const rankingList = document.querySelector(".ranking-list");
-
-      rankingList.innerHTML = "";
-
-      ranking.forEach((time, index) => {
-        const li = document.createElement("li");
-        li.classList.add("item-ranking");
-        switch (index) {
-          case 0:
-            li.classList.add("primeiro-lugar");
-            break;
-          case 1:
-            li.classList.add("segundo-lugar");
-            break;
-          case 2:
-            li.classList.add("terceiro-lugar");
-            break;
-        }
-
-        li.innerHTML = `
-            <img
-              src="/IMG/medalha-de-${
-                index === 0 ? "ouro" : index === 1 ? "prata" : "bronze"
-              }.png"
-              alt="Medalha de ${
-                index === 0 ? "ouro" : index === 1 ? "prata" : "bronze"
-              }"
-              class="medalha-icon"
-            />
-            <strong>${time.nome_time}</strong> - ${time.total_sets_ganhos} sets
-          `;
-
-        rankingList.appendChild(li);
-      });
-    } catch (error) {
-      console.error(error);
-      alert("Erro ao carregar o ranking");
-    }
-  }
-
-  async function carregarRanking() {
-    try {
       const response = await fetch("http://localhost:3000/ranking");
       const dadosRanking = await response.json();
 
